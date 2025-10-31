@@ -1,0 +1,14 @@
+{
+  "name": "mika-module-fr",
+  "version": "1.0.0",
+  "description": "module_federation",
+  "scripts": {
+    "start-host": "node server-host",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daryl",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.5"
+  }
+}

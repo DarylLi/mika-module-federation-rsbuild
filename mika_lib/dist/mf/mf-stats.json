@@ -1,0 +1,79 @@
+{
+  "id": "mika_federation_lib",
+  "name": "mika_federation_lib",
+  "metaData": {
+    "name": "mika_federation_lib",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "mika_federation_lib"
+    },
+    "remoteEntry": {
+      "name": "mika_federation_lib.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "mika_federation_lib",
+    "pluginVersion": "0.19.1",
+    "prefetchInterface": false,
+    "publicPath": "https://unpkg.com/mika_federation_lib@latest/dist/mf/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "mika_federation_lib:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "2~37.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "."
+      ]
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": ".",
+      "id": "mika_federation_lib:.",
+      "name": ".",
+      "requires": [
+        "react"
+      ],
+      "file": "src/index.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "2~__federation_expose_default_export.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "__federation_expose_default_export.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}

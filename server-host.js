@@ -3,7 +3,7 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const port = 8100;
+const port = 3001;
 var http = require("http");
 const cors = require("cors");
 
@@ -28,8 +28,11 @@ app.use((req, res, next) => {
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/mika_host/dist/index.html");
 });
+// app.get("/*", (req, res) => {
+//   res.sendFile(__dirname + `/mika_host/dist/${req.url}`);
+// });
 app.get("/*", (req, res) => {
-  res.sendFile(__dirname + `/mika_host/dist/${req.url}`);
+  res.sendFile(__dirname + `/mika_lib/dist/${req.url}`);
 });
 var httpServer = http.createServer(app);
 console.log(`server listening on port ${port}`);

@@ -5,9 +5,12 @@ export default createModuleFederationConfig({
   exposes: {
     "./testcomponent": "./src/testcmpt.vue",
     "./component": "./src/component.vue",
+    "./asyncComponent1": "./src/components/async1.vue",
+    "./asyncComponent2": "./src/components/async2.vue",
   },
   shared: {
     vue: { singleton: true },
+    vuetify: { singleton: true },
   },
   dts: {
     generateTypes: {

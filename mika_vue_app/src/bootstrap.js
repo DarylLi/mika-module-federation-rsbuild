@@ -3,8 +3,16 @@ import * as Vue from "vue";
 
 import App from "./App.vue";
 import { createInstance } from "@module-federation/enhanced/runtime";
+import "vuetify/styles";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+import { createVuetify } from "vuetify";
 
-createApp(App).mount("#root");
+const vuetify = createVuetify({
+  components,
+  directives,
+});
+createApp(App).use(vuetify).mount("#root");
 // setTimeout(() => {
 //   let innerMf = createInstance({
 //     name: "mf_host",

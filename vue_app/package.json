@@ -1,7 +1,8 @@
 {
-  "name": "mika_vue_app",
-  "private": true,
+  "name": "mika_federation_app",
+  "private": false,
   "version": "1.0.0",
+  "main": "./src/lib.js",
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
@@ -12,7 +13,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "vue": "^3.5.22",
-    "vue-tsc": "^3.1.2"
+    "vue-tsc": "^3.1.2",
+    "vuetify": "^3.10.8"
   },
   "devDependencies": {
     "@module-federation/rsbuild-plugin": "^0.19.1",

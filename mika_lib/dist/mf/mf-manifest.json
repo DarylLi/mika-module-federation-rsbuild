@@ -5,7 +5,7 @@
     "name": "mika_federation_lib",
     "type": "app",
     "buildInfo": {
-      "buildVersion": "0.0.0",
+      "buildVersion": "0.0.1",
       "buildName": "mika_federation_lib"
     },
     "remoteEntry": {
@@ -28,9 +28,9 @@
     {
       "id": "mika_federation_lib:react",
       "name": "react",
-      "version": "18.3.1",
+      "version": "19.2.0",
       "singleton": true,
-      "requiredVersion": "^18.3.1",
+      "requiredVersion": "^19.2.0",
       "assets": {
         "js": {
           "async": [],
